@@ -88,4 +88,4 @@ image = torch.from_numpy(img)
 image = image.float()
 
 result = network.forward(image.view(-1,28*28))
-print(torch.argmax(output))
+print(torch.argmax(result))
